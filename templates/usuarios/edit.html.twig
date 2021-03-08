@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Editar Usuarios{% endblock %}
+
+{% block body %}
+    <h1>Editar Usuarios</h1>
+
+    {{ include('usuarios/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('usuarios_index') }}">volver a la lista</a>
+
+{% endblock %}
